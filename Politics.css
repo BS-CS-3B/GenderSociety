@@ -1,0 +1,400 @@
+:root {
+  --offwhite: #f8f8f8;
+  --green: #375f4b;
+  --pink: #f7d7df;
+  --black: #333;
+  --orange: #ff6926;
+  --lightbrown: #816f66;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: var(--offwhite);
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 8vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  background-color: var(--pink);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand a {
+  color: var(--orange);
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.navbar-links {
+  list-style: none;
+  display: flex;
+}
+
+.navbar-links li {
+  margin: 0 20px;
+}
+
+.navbar-links a {
+  color: #79675e;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 5px 10px;
+  transition: color 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: var(--orange);
+}
+
+.search-box {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.search-box input,
+.search-box button {
+  border: none;
+  background-color: transparent;
+  padding: 8px 15px;
+  outline: none;
+  color: #777;
+  cursor: pointer;
+}
+
+/* 1st SLIDE */
+.header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 100px;
+  background-color: var(--pink);
+}
+
+.main-title h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-size: 8rem;
+  letter-spacing: 5px;
+  text-align: center;
+  color: var(--green);
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.7);
+  animation: fadeInUp 3s ease-out 0.5s forwards;
+}
+
+.main-title h1 span:nth-child(1),
+.content-title h1 span:nth-child(1) {
+  color: var(--lightbrown);
+}
+
+.main-title h1 span:nth-child(2),
+.content-title h1 span:nth-child(2) {
+  color: #f19bb1;
+}
+
+.main-title h1 span:nth-child(3),
+.content-title h1 span:nth-child(3) {
+  color: var(--lightbrown);
+}
+
+.main-image-display,
+.main-image-display1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.main-image-display1 {
+  justify-content: flex-end;
+}
+
+.main-image-display img,
+.main-image-display1 img {
+  max-width: 100%;
+  height: 100%;
+}
+
+/* SECTION: Politics */
+.section-politics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 150px 0 200px;
+  background-color: var(--pink);
+}
+
+.content-title {
+  width: 90%;
+  max-width: 2000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.content-title h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 800;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  color: var(--green);
+  text-align: left;
+  animation: fadeInUp 3s ease-out 0.5s forwards;
+}
+
+.text-quote p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  width: 40vw;
+  color: var(--black);
+  margin: 0 auto;
+  text-align: justify;
+  line-height: 1.6;
+  letter-spacing: 2.5px;
+  animation: fadeInUp 3s ease-out 0.5s forwards;
+}
+
+/* SECTION: Gender Equality */
+.gender-equality {
+  display: flex;
+  width: 100%;
+  padding: 100px 0 80px;
+  background-color: var(--offwhite);
+}
+
+.gender-matters h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  text-align: right;
+  margin: 0 25px 20px 320px;
+  color: var(--green);
+  animation: fadeInUp 3s ease-out 0.5s forwards;
+}
+
+.arrow {
+  display: flex;
+  justify-content: flex-start;
+  overflow: hidden;
+  width: 100%;
+}
+
+.equality-discussion-display {
+  width: 100%;
+  display: block;
+  justify-content: center;
+}
+
+.equality-discussion p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 100px auto;
+  animation: fadeInUp 3s ease-out 0.5s forwards;
+}
+
+/* SECTION: Quote */
+.quote-content {
+  background: linear-gradient(180deg, #f19bb1, #f19bb1);
+  padding: 50px;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 1200px;
+  height: 400px;
+  margin: 40px auto;
+  border: 2px solid var(--lightbrown);
+  border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.quote h4 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  text-align: center;
+  color: var(--green);
+  animation: fadeInUp 3s ease-out 0.5s forwards;
+}
+
+/* SECTION: Gender Stats */
+/* WRAPPER FOR OVERLAPPING IMAGE + 3 SECTIONS */
+.overlap-wrapper {
+  position: relative;
+  width: 100%;
+  z-index: 0;
+}
+
+/* IMAGE THAT OVERLAPS ALL THREE SECTIONS */
+.overlap-image {
+  position: absolute;
+  top: 100px; /* Adjust to control vertical overlap */
+  left: 85%;
+  transform: translateX(-50%);
+  width: 500px; /* Adjust size */
+  z-index: 5;
+  pointer-events: none; /* Allows clicks through image */
+}
+
+/* SECTION: Gender Stats */
+.gender-dark,
+.gender-pink,
+.gender-green {
+  width: 100%;
+  padding: 30px 0; /* Increased padding to allow room for image */
+  font-family: 'Poppins', sans-serif;
+}
+
+.gender-dark {
+  background-color: var(--lightbrown);
+}
+
+.gender-pink {
+  background-color: var(--pink);
+}
+
+.gender-green {
+  background-color: var(--green);
+}
+
+.bgpink{
+  width: 100%;
+  padding: 20px 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--pink)
+}
+
+.dark-content p,
+.pink-content p,
+.green-content p {
+  max-width: 1200px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: flex-start;
+  margin: 0 auto;
+  padding: 50px;
+  animation: fadeInUp 3s ease-out 0.5s forwards;
+  color: var(--offwhite);
+}
+
+.GP-PP h3 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  font-size: 4rem;
+  letter-spacing: 5px;
+  text-align: left;
+  margin-left: 50px;
+  color: var(--green);
+  animation: fadeInUp 3s ease-out 0.5s forwards;
+}
+
+.dark-content p,
+.pink-content p,
+.green-content p {
+  max-width: 1200px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+  text-align: flex-start;
+  margin: 0 auto;
+  padding: 50px;
+  animation: fadeInUp 3s ease-out 0.5s forwards;
+  color: var(--offwhite);
+}
+
+.Mainstreaming {
+  width: 100%;
+  background-color: var(--pink);
+  padding: 100px 20px; /* top/bottom spacing and mobile padding */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Mainstream-label {
+  width: 100vw;           /* Full viewport width */
+  background-color: var(--offwhite);
+  padding: 50px 20px;     /* Padding with some horizontal breathing room */
+  text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  animation: fadeInUp 2s ease-out;
+  box-sizing: border-box; /* ensure padding doesn’t break width */
+  margin-left: calc(-50vw + 50%); /* pulls element full-width ignoring container padding */
+  margin-right: calc(-50vw + 50%);
+}
+
+.Mainstream-label h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: var(--green);
+  margin-bottom: 30px;
+  margin-right: 10px;
+  text-align: right;
+}
+
+.Mainstream-label p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2rem;
+  line-height: 1.8;
+  color: var(--black);
+  text-align: right;
+  letter-spacing: 1px;
+  margin-right: 10px;
+}
+
+/* Optional fadeInUp animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.overlap-pic {
+  width: 328px;
+  height: 594px;
+  position: absolute;
+  left: 10px; /* adjust as needed */
+  margin: 0 0 -160px 60px;
+}

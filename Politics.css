@@ -12,7 +12,9 @@
   margin: 0;
   padding: 0;
 }
-
+.main-title{
+  padding-top: 10vh;
+}
 html {
   scroll-behavior: smooth;
 }
